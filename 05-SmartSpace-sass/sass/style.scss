@@ -24,7 +24,187 @@ body {
 }
 
 img {
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
     vertical-align: bottom;
+}
+
+/* ----------common----------*/
+/* header */
+.header__logo {
+    font-size: 24px;
+    line-height: math.div(24, 24);
+}
+
+/* unit */
+.unit {
+    &__catch {
+        margin-bottom: 20px;
+        color: $color-main;
+        font-style: 18px;
+        line-height: math.div(30, 18);
+        font-weight: bold;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        color: $color-heading;
+        line-height: math.div(58, 48);
+        font-size: 48px;
+    }
+
+    // 要素の中の一番最後の要素の下のマージンを0にする
+    .last-child {
+        margin-bottom: 0;
+    }
+}
+
+.gnav ul {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 30px;
+    font-weight: bold;
+    justify-content: end;
+
+    .gnav__item--active {
+        color: $color-main;
+    }
+}
+
+.btn {
+    margin-top: 60px;
+    padding: 20px 35px;
+    display: block;
+    width: 200px;
+    background-color: $color-accent;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.btn--info {
+    margin-top: 40px;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    background-color: $color-main;
+}
+
+/* ----------index.html----------*/
+/* header */
+.header {
+    padding: 55px 0 85px 0;
+    display: grid;
+    font-weight: bold;
+
+    &__inner {
+        @include inner();
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+    }
+}
+
+/* spaces */
+.spaces {
+    padding-bottom: 120px;
+
+    &__inner {
+        @include inner();
+        display: grid;
+        grid-template-columns: 440fr 500fr;
+        column-gap: percentage(math.div(60, 1000));
+        align-items: center;
+    }
+}
+
+/* reviews */
+.reviews {
+    padding-bottom: 120px;
+
+    &__inner {
+        @include inner();
+
+    }
+
+    &__info {
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: persentage(math.div(60, 1000));
+        gap: 60px;
+
+
+
+        .card {
+            padding: 45px 40px;
+            border: 1px solid #000;
+            border-radius: 20px;
+        }
+
+        .card__content {
+            margin-bottom: 80px;
+        }
+
+        .customer {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .customer__name {
+            font-weight: bold;
+        }
+    }
+}
+
+/* footer */
+.footer {
+    display: flex;
+    padding: 100px 0;
+    background-color: #dbffff;
+
+
+
+    &__inner {
+        @include inner();
+    }
+
+    .footer__copy {
+        margin-top: 40px;
+        display: block;
+        text-align: right;
+    }
+}
+
+/* ----------about.htmln----------*/
+/* information */
+.information {
+    margin-bottom: 120px;
+
+    &__inner {
+        @include inner();
+    }
+
+    &__info {
+        width: 600px;
+    }
+
+    .information__list {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        gap: 50px;
+
+        .unit__text {
+            margin: 20px 0 40px 0;
+        }
+    }
 }
