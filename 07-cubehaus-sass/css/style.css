@@ -1,0 +1,210 @@
+body {
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.05em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.unit__title {
+  margin: 30px 0 20px 0;
+  font-size: 18px;
+  line-height: 1.7222222222;
+  font-weight: bold;
+}
+.unit__text {
+  line-height: 1.7142857143;
+}
+.unit__pic--new::after {
+  content: "";
+}
+
+/* ---------- index.html ----------*/
+/* header */
+.header {
+  padding: 40px 0;
+}
+.header__inner {
+  max-width: 1000px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2083333333;
+  letter-spacing: 0.1em;
+}
+
+.gnav__list {
+  display: flex;
+  gap: 30px;
+  font-size: 12px;
+  line-height: 1.1666666667;
+}
+.gnav__item--active {
+  color: #E40065;
+}
+
+.footer {
+  padding: 80px 0;
+  background-color: #2F2F2F;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.6666666667;
+  font-weight: bold;
+  text-align: center;
+}
+.footer__inner {
+  max-width: 1000px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* mainvisual */
+.mainvisual {
+  margin-bottom: 80px;
+}
+.mainvisual__inner {
+  max-width: 1000px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* philosophy */
+.philosophy__inner {
+  max-width: 1000px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.philosophy__title {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+.philosophy__title::before {
+  content: "PHILOSOPHY";
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: normal;
+}
+.philosophy__title::after {
+  content: "";
+  margin: 0 auto 60px auto;
+  display: block;
+  width: 100px;
+  border-bottom: 2px solid #E40065;
+  padding-bottom: 25px;
+}
+.philosophy__text {
+  display: grid;
+  word-break: keep-all;
+  text-align: center;
+  line-height: 2.4285714286;
+  row-gap: 60px;
+}
+
+/* works */
+.works {
+  margin: 120px 0;
+}
+.works__inner {
+  max-width: 1000px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.works__title {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+.works__title::before {
+  content: "WORKS";
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: normal;
+}
+.works__title::after {
+  content: "";
+  margin: 0 auto 60px auto;
+  display: block;
+  width: 100px;
+  border-bottom: 2px solid #E40065;
+  padding-bottom: 25px;
+}
+.works__list {
+  display: grid;
+  row-gap: 60px;
+}
+
+/* VOICE */
+.voice {
+  padding: 80px 0 120px 0;
+  background-color: #F4F4F4;
+}
+.voice__inner {
+  max-width: 1000px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.voice__title {
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+.voice__title::before {
+  content: "VOICE";
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: normal;
+}
+.voice__title::after {
+  content: "";
+  margin: 0 auto 60px auto;
+  display: block;
+  width: 100px;
+  border-bottom: 2px solid #E40065;
+  padding-bottom: 25px;
+}
+.voice__list {
+  display: grid;
+  row-gap: 60px;
+}
+.voice__list .card {
+  padding: 45px 40px;
+  background-color: #fff;
+  border: 1px solid #A3A3A3;
+  border-radius: 20px;
+}
+.voice__list .card__content {
+  margin-bottom: 40px;
+}
+.voice__list .customer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.voice__list .customer__company {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
